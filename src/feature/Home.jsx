@@ -103,7 +103,9 @@ const Todo = ({ Update, Delete, data }) => {
                 {editMode ? "Update" : "Edit"}
             </button>
             <button onClick={onDelete}>Delete</button>
+            <label htmlFor='done' >Done</label>
             <input
+                id='done'
                 style={styles.checkBox}
                 type="checkbox"
                 defaultChecked={content?.done}
